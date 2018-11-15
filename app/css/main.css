@@ -28,11 +28,11 @@ body {
   position: absolute;
   left: 0;
   bottom: 50%;
-  transform: translateY(50%);
   display: block;
   width: 20px;
   height: 20px;
   background-color: #808080;
+  transform: translateY(50%);
 }
 
 .check:checked + label::before {
@@ -41,16 +41,16 @@ body {
 }
 
 .check:checked ~ .item {
-  transform: scale(2);
   border: 1px solid #ffff00;
   border-radius: 50%;
   background-color: transparent;
+  transform: scale(2);
   transition: 5s background-color;
 }
 
 .check:checked ~ .item:hover {
-  transition: 0s background-color;
   background-color: #ffff00;
+  transition: 0s background-color;
 }
 
 .container {
